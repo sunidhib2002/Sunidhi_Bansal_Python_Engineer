@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module XML_Parser</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>XML_Parser</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Csunidhi%5Cdesktop%5Csteeleye%5Cxml_parser.py">c:\users\sunidhi\desktop\steeleye\xml_parser.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;importing&nbsp;important&nbsp;libraries</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="boto3.html">boto3</a><br>
+<a href="configparser.html">configparser</a><br>
+</td><td width="25%" valign=top><a href="csv.html">csv</a><br>
+<a href="logging.html">logging</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="xmltodict.html">xmltodict</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-create_csv"><strong>create_csv</strong></a>(data, data_issr)</dt><dd><tt>#&nbsp;This&nbsp;function&nbsp;is&nbsp;used&nbsp;for&nbsp;creating&nbsp;the&nbsp;csv&nbsp;file&nbsp;from&nbsp;the&nbsp;extracted&nbsp;data.</tt></dd></dl>
+ <dl><dt><a name="-initialize_s3_bucket"><strong>initialize_s3_bucket</strong></a>(access_key, secret_access_key, region, bucket_name)</dt><dd><tt>#&nbsp;This&nbsp;function&nbsp;is&nbsp;used&nbsp;for&nbsp;initializing&nbsp;the&nbsp;s3&nbsp;bucket&nbsp;from&nbsp;where&nbsp;we&nbsp;want&nbsp;to&nbsp;access&nbsp;the&nbsp;XML&nbsp;file.</tt></dd></dl>
+ <dl><dt><a name="-load_config"><strong>load_config</strong></a>()</dt><dd><tt>#This&nbsp;function&nbsp;is&nbsp;used&nbsp;for&nbsp;loading&nbsp;the&nbsp;config&nbsp;file&nbsp;and&nbsp;get&nbsp;necessary&nbsp;credetial&nbsp;details&nbsp;from&nbsp;AWS,&nbsp;like&nbsp;the&nbsp;S3&nbsp;bucket&nbsp;name,&nbsp;access&nbsp;key,&nbsp;secret&nbsp;access&nbsp;key,&nbsp;etc.</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>#&nbsp;This&nbsp;the&nbsp;main&nbsp;function&nbsp;from&nbsp;where&nbsp;call&nbsp;all&nbsp;the&nbsp;other&nbsp;functions.</tt></dd></dl>
+ <dl><dt><a name="-parse_xml_data"><strong>parse_xml_data</strong></a>(data_dict)</dt><dd><tt>#&nbsp;This&nbsp;is&nbsp;used&nbsp;for&nbsp;validating&nbsp;the&nbsp;xml&nbsp;structure&nbsp;and&nbsp;parsing&nbsp;the&nbsp;file&nbsp;to&nbsp;extract&nbsp;the&nbsp;required&nbsp;information.</tt></dd></dl>
+ <dl><dt><a name="-validate_xml_structure"><strong>validate_xml_structure</strong></a>(data_dict)</dt><dd><tt>#&nbsp;This&nbsp;function&nbsp;is&nbsp;used&nbsp;for&nbsp;identifying&nbsp;different&nbsp;tags&nbsp;in&nbsp;the&nbsp;XML&nbsp;file&nbsp;and&nbsp;check&nbsp;its&nbsp;structure.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>FILE_PATH</strong> = 'config.cfg'</td></tr></table>
+</body></html>
